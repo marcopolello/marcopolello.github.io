@@ -1,7 +1,10 @@
 @import "common";
 @import "menu";
-// @import "mobile";
-
+// export to js
+:export {
+  primaryColor: $primary-color;
+  secondaryColor: $secondary-color;
+}
 * {
   padding: 0;
   margin: 0;
@@ -202,3 +205,5 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
+
+@import "mobile";

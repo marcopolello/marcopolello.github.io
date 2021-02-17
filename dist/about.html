@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- chartjs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css "
+      defer
+    />
+    <!-- bootstrap cdn -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+    <!-- font family google -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap"
+      rel="stylesheet"
+    />
+    <title>About Axl</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav ">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              Home
+            </a>
+          </li>
+          <li class="nav-item current">
+            <a href="about.html" class="nav-link">
+              Chi sono?
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">
+              Progetti
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contacts.html" class="nav-link">
+              Contatti
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="about">
+      <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
+      <h2 class="sm-heading">
+        Chi sono?
+      </h2>
+      <div class="about-info">
+        <img src="images/img.png" alt="Axl Fernandez" class="bio-image" />
+        <div class="bio">
+          <h3 class="text-secondary">Axl Fernandez</h3>
+          <p>
+            Sono un Full Stack Web Developer
+          </p>
+          <p>
+            Appassionato di informatica e tecnologia. Amo conoscere persone
+            nuove, adoro le sfide e sopratutto sono sempre pronto ad imparare
+            nuovi modi per risolvere problemi e bug nella programmazione.
+          </p>
+        </div>
+        <div class="skills">
+          <h3 class="text-secondary">Competenze</h3>
+          <canvas
+            id="myChart"
+            style="width: 100% !important; height: 100% !important;"
+          ></canvas>
+        </div>
+        <div class="job job-1">
+          <h3>Boolean Career</h3>
+          <h5 class="text-secondary">Jr. Full Stack Web Developer Trainee</h5>
+          <h6 style="color: lightgray;">Set 2019 - Mar 2019</h6>
+          <div class="overflow">
+            <p>
+              Realizzazione di una complessa applicazione Web ispirata ad
+              Airbnb, formata da Backend (Autenticazione a più ruoli,
+              Integrazione Payment Provider, Geolocation API) e interfaccia
+              Frontend responsive. Inoltre, durante questi sei mesi, ho
+              realizzato anche altri progetti ispirandomi a Whatsapp web,
+              Spotify, Netflix, Digital Ocean e tanti altri... Le tecnologie che
+              ho utilizzato sono: HTML, SASS, JQuery, PHP, MySQL e Laravel.l.
+            </p>
+          </div>
+        </div>
+        <div class="job job-2">
+          <h3>7Divino Winebar & Shop</h3>
+          <h5 class="text-secondary">
+            Commis Sommelier e Social Media Manager
+          </h5>
+          <h6 style="color: lightgray;">Mag 2018 - Set 2019</h6>
+          <div class="overflow">
+            <ul>
+              <li>
+                <strong>Social Media Manager:</strong>
+                <ul>
+                  <li>Social strategy</li>
+                  <li>Social management</li>
+                  <li>Social advertising</li>
+                  <li>Influencer engagement</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Competenze acquisite:</strong>
+                <ul>
+                  <li>Lavorare in team</li>
+                  <li>Gestione della clientela</li>
+                  <li>Iniziativa e automotivazione</li>
+                  <li>Flessibilità</li>
+                  <li>Organizzazione</li>
+                  <li>Relazione con il Pubblico</li>
+                  <li>Adattabilità</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="job job-3">
+          <h3>AxlqWorlds</h3>
+          <h5 class="text-secondary">Sviluppatore Web</h5>
+          <h6 style="color: lightgray;">2013 - 2015</h6>
+          <p>Gestione del sito e del server di un gioco browser</p>
+          <div class="overflow">
+            <ul>
+              <li>Gestione database del server</li>
+              <li>Creazione della pagina Home, Registrazione</li>
+              <li>Social Media Manager</li>
+              <li>Game Manager</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="main-footer">
+      <div class="div">
+        Copyright &copy; 2020
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
