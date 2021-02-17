@@ -264,7 +264,7 @@
     transform: translate3d(0, 0, 0);
   }
 }
-.iconA:hover {
+.cont:hover {
   animation: animationFrames linear 1s;
   animation-iteration-count: 1;
   transform-origin: 50% 0%;
@@ -282,7 +282,25 @@
   -ms-transform-origin: 50% 0%;
 }
 
-.iconA:hover {
+.boxes, .iconA:hover {
+  animation: animationFrames linear 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 0%;
+  -webkit-animation: animationFrames linear 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 0%;
+  -moz-animation: animationFrames linear 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 0%;
+  -o-animation: animationFrames linear 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 0%;
+  -ms-animation: animationFrames linear 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 0%;
+}
+
+.boxes, .iconA:hover {
   -webkit-animation-play-state: running;
           animation-play-state: running;
 }
@@ -485,7 +503,7 @@ main#home h1 {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 200px;
 }
 .boxes div {
   font-size: 2rem;
