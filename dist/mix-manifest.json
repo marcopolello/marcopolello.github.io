@@ -1,10 +1,15 @@
 {
     "/app.js": "/app.js",
+    "/css/app.css": "/css/app.css",
     "/about.html": "/about.html",
     "/contacts.html": "/contacts.html",
     "/index.html": "/index.html",
     "/projects.html": "/projects.html",
+    "/img/airbnb.jpg": "/img/airbnb.jpg",
+    "/img/boolflix.png": "/img/boolflix.png",
+    "/img/favicon.ico": "/img/favicon.ico",
     "/img/me.jpg": "/img/me.jpg",
     "/img/sfondo.gif": "/img/sfondo.gif",
-    "/css/app.css": "/css/app.css"
+    "/img/spotify.jpg": "/img/spotify.jpg",
+    "/img/whatsapp.png": "/img/whatsapp.png"
 }

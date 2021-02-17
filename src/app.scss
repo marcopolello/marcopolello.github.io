@@ -1,5 +1,6 @@
 @import "common";
 @import "menu";
+@import "animations";
 // @import "mobile";
 
 * {
@@ -13,7 +14,7 @@ body {
   background-color: $primary-color;
   color: set-text-color($primary-color);
   height: 100%;
-  font-family: "Chakra Petch", sans-serif;
+  font-family: 'Architects Daughter', cursive;
   line-height: 1.5;
 }
 
@@ -129,7 +130,6 @@ main {
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
   img {
-    width: 100%;
     height: 20vh;
     border: 3px #fff solid;
     &:hover {
