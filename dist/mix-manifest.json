@@ -5,12 +5,14 @@
     "/contacts.html": "/contacts.html",
     "/index.html": "/index.html",
     "/projects.html": "/projects.html",
+    "/skills.html": "/skills.html",
     "/img/airbnb.jpg": "/img/airbnb.jpg",
     "/img/boolflix.png": "/img/boolflix.png",
+    "/img/BoolzApp.png": "/img/BoolzApp.png",
     "/img/favicon.ico": "/img/favicon.ico",
     "/img/me.jpg": "/img/me.jpg",
     "/img/sfondo.gif": "/img/sfondo.gif",
     "/img/spotify.jpg": "/img/spotify.jpg",
-    "/img/whatsapp.png": "/img/whatsapp.png",
-    "/skills.html": "/skills.html"
+    "/img/spotify.png": "/img/spotify.png",
+    "/img/whatsapp.png": "/img/whatsapp.png"
 }
