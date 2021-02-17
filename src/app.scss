@@ -25,6 +25,7 @@ h3 {
   font-weight: 400;
   &.lg-heading {
     font-size: 6rem;
+    margin-bottom: 0.2em;
   }
   &.sm-heading {
     margin-bottom: 2rem;
@@ -75,10 +76,10 @@ main {
   justify-items: center;
   align-items: center;
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 50px;
   grid-template-areas:
-    "bioimage bio skills"
-    "job1 job2 job3";
+    "skills job1 job2"
+    "job3 job4 job5";
   grid-template-columns: repeat(3, 1fr);
   .bio-image {
     grid-area: bioimage;
@@ -87,17 +88,14 @@ main {
     border: $secondary-color solid 3px;
   }
 
-  .bio {
-    grid-area: bio;
-    font-size: 1.1rem;
-  }
   .skills {
     grid-area: skills;
     #myChart {
-      width: 100% !important;
-      height: 100% !important;
+      width: 150% !important;
+      height: 150% !important;
     }
   }
+
   .job-1 {
     grid-area: job1;
   }
@@ -107,12 +105,17 @@ main {
   .job-3 {
     grid-area: job3;
   }
+  .job-4 {
+    grid-area: job4;
+  }
+  .job-5{
+    grid-area: job5;
+  }
 
   .job {
     background-color: lighten($primary-color, 5);
     padding: 1rem;
     border-bottom: $secondary-color 5px solid;
-    // line-height: 1.2rem;
     width: 95%;
     height: 95%;
   }

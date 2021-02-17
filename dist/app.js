@@ -41,7 +41,7 @@ function toggleMenu() {
 
 var colors = {
   primaryColor: "black",
-  secondaryColor: "#25b0e7"
+  secondaryColor: "#08d816"
 }; // chart js
 
 var ctx = document.getElementById("myChart").getContext("2d");
@@ -56,7 +56,7 @@ var chart = new Chart(ctx, {
       backgroundColor: colors.secondaryColor,
       borderColor: "green",
       borderWidth: 1,
-      data: [80, 80, 60, 60, 50, 65, 62, 80]
+      data: [91, 88, 85, 76, 72, 85, 71, 84]
     }]
   },
   // Configuration options go here
