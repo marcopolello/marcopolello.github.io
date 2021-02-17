@@ -1,5 +1,10 @@
 {
     "/app.js": "/app.js",
-    "/css/app.css": "/css/app.css",
-    "/index.html": "/index.html"
+    "/about.html": "/about.html",
+    "/contacts.html": "/contacts.html",
+    "/index.html": "/index.html",
+    "/projects.html": "/projects.html",
+    "/img/me.jpg": "/img/me.jpg",
+    "/img/sfondo.gif": "/img/sfondo.gif",
+    "/css/app.css": "/css/app.css"
 }
