@@ -61,10 +61,10 @@
   }
   // right nav
   &-nav {
-    width: 55%;
+    width: 45%;
     background: rgba(darken($primary-color, 5), 0.7);
     list-style: none;
-    transform: translate3d(110%, 0, 0);
+    transform: translate3d(90%, 0, 0);
     @include easeOut;
     &.show {
       transform: translate3d(0, 0, 0);
@@ -72,9 +72,13 @@
   }
   // left
   &-branding {
-    width: 45%;
+    width: 55%;
     background: $primary-color;
-    transform: translate3d(-90%, 0, 0);
+    transform: translate3d(-110%, 0, 0);
+    #aforisma{
+      font-family: 'Dancing Script', cursive;
+      font-size: 30px;
+    }
     @include easeOut;
     &.show {
       transform: translate3d(0, 0, 0);
