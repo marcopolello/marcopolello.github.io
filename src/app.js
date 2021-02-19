@@ -15,23 +15,7 @@ const projImg1 = document.querySelector(".imgP1");
 // const projBtn4 = document.querySelector(".btn-light 4");
 // Set Initial state of Menu
 let showMenu = false;
-let zoomImg = false;
-
 menuBtn.addEventListener("click", toggleMenu);
-projBtn1.addEventListener("click", expandImg);
-
-function expandImg() {
-  if (!zoomImg) {
-    projImg1.classList.add("zoomImg");
-    zoomImg = true;
-  }
-  else {
-    projImg1.classList.remove("zoomImg");
-    zoomImg = false;
-  }
-}
-
-
 
 
 function toggleMenu() {

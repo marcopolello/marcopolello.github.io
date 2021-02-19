@@ -22,19 +22,7 @@ var projImg1 = document.querySelector(".imgP1"); // const projBtn2 = document.qu
 // Set Initial state of Menu
 
 var showMenu = false;
-var zoomImg = false;
 menuBtn.addEventListener("click", toggleMenu);
-projBtn1.addEventListener("click", expandImg);
-
-function expandImg() {
-  if (!zoomImg) {
-    projImg1.classList.add("zoomImg");
-    zoomImg = true;
-  } else {
-    projImg1.classList.remove("zoomImg");
-    zoomImg = false;
-  }
-}
 
 function toggleMenu() {
   if (!showMenu) {
