@@ -57,30 +57,31 @@ function toggleMenu() {
     });
     showMenu = false;
   }
-} // AFORISMI
+} // aforisma random
 
-
-var a = "Lo scopo del lavoro è quello di guadagnarsi il tempo libero. <br> -Aristotele";
-var b = "Ritrovarsi insieme è un inizio, <br> restare insieme è un progresso, <br> ma riuscire a lavorare insieme è un successo. <br> - Henry Ford";
-var c = "Hai raggiunto il successo nel tuo campo quando non sai <br> se quello che stai facendo è lavoro o gioco. <br> - Warren Beatty";
-var d = "Siate affamati! Siate folli! <br> - Steve Jobs";
-var e = "Il mondo è nelle mani di coloro che hanno il coraggio di sognare <br> e di correre il rischio di vivere i propri sogni. <br> - Paulo Coelho";
-var f = "Se oggi vado a letto non avendo fatto <br> niente di nuovo rispetto a ieri, <br> allora oggi è stato sprecato. <br> - Bill Gates";
-var g = "C'è un solo tipo di successo: <br> quello di fare della propria vita <br> ciò che si desidera. <br> - Henry David Thoreau";
-var h = "Le difficoltà rafforzano la mente, <br> come la fatica rafforza il corpo. <br> - Lucio Anneo Seneca";
-var aforismi = [a, b, c, d, e, f, g, h]; // aforisma random
 
 function randAforism() {
-  var textNow = document.getElementById("aforisma").innerHTML;
-  console.log(textNow);
+  // AFORISMI
+  var a = "Lo scopo del lavoro <br> è quello di guadagnarsi il tempo libero. <br> -Aristotele";
+  var b = "Ritrovarsi insieme è un inizio, <br> restare insieme è un progresso, <br> ma riuscire a lavorare insieme è un successo. <br> - Henry Ford";
+  var c = "Hai raggiunto il successo nel tuo campo <br> quando non sai se quello che stai facendo  <br> è lavoro o gioco. <br> - Warren Beatty";
+  var d = "Siate affamati! Siate folli! <br> - Steve Jobs";
+  var e = "Il mondo è nelle mani di coloro <br> che hanno il coraggio di sognare <br> e di correre il rischio di vivere i propri sogni. <br> - Paulo Coelho";
+  var f = "Se oggi vado a letto non avendo fatto <br> niente di nuovo rispetto a ieri, <br> allora oggi è stato sprecato. <br> - Bill Gates";
+  var g = "C'è un solo tipo di successo: <br> quello di fare della propria vita <br> ciò che si desidera. <br> - Henry David Thoreau";
+  var h = "Le difficoltà rafforzano la mente, <br> come la fatica rafforza il corpo. <br> - Lucio Anneo Seneca";
+  var aforismi = [a, b, c, d, e, f, g, h];
+  var textNow = document.getElementById("aforisma").innerHTML; // console.log(a);
+
   var par = aforismi[Math.floor(Math.random() * aforismi.length)];
+  return document.getElementById("aforisma").innerHTML = par;
 
   if (par != textNow) {
-    // console.log("diversi");
-    // write in <p>
+    console.log("diversi"); // write in <p>
+
     return document.getElementById("aforisma").innerHTML = par;
   } else {
-    // console.log("uguali");
+    console.log("uguali");
     var par = aforismi[Math.floor(Math.random() * aforismi.length)];
     return document.getElementById("aforisma").innerHTML = par;
   }
