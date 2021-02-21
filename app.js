@@ -92,7 +92,7 @@ var chart = new Chart(ctx, {
       backgroundColor: colors.secondaryColor,
       borderColor: "green",
       borderWidth: 1,
-      data: [91, 88, 85, 76, 72, 85, 71, 84]
+      data: [100, 100, 95, 76, 72, 85, 71, 84]
     }]
   },
   // Configuration options go here
