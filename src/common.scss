@@ -1,6 +1,6 @@
 $primary-color: black;
 $secondary-color: #08d816;
-$tertiary-color: #1027f2;
+$tertiary-color: #23892a;
 $show-home-image: true;
 $home-image: url("https://cutewallpaper.org/21/1920-x-1080-gif/Gifart-Lo-Fi-Wallpapers-Top-Free-Gifart-Lo-Fi-Backgrounds-.gif");
 $background-opacity: 0.1;
@@ -17,12 +17,12 @@ $background-opacity: 0.1;
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: $secondary-color;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: $tertiary-color;
 }
 // mixins
 @mixin easeOut {

@@ -73,22 +73,45 @@ main {
     }
   }
 }
+// griglia about me
 .about-me{
   justify-items: center;
   align-items: center;
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 30px;
   grid-template-areas:
-    "photo job1 job2"
-    "job3 job4 job5";
+    "photo-1 photo-2 photo-3"
+    "bio-1 bio-2 bio-3";
   grid-template-columns: repeat(3, 1fr);
-  .bio-image {
-    grid-area: photo;
+  .photo-1 {
+    grid-area: photo-1;
     margin: auto;
     border-radius: 50%;
-    border: $secondary-color solid 3px;
+    border: $secondary-color solid 2px;
+  }
+  .photo-2{
+    grid-area: photo-2;
+    height: 400px;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color solid 2px;
+  }
+  .photo-3{
+    grid-area: photo-3;
+    height: 400px;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color solid 2px;
+  }
+  .bio{
+    background-color: lighten($primary-color, 5);
+    padding: 1rem;
+    width: 95%;
+    height: 95%;
   }
 }
+
+// griglia skills & exp
 .about-info {
   justify-items: center;
   align-items: center;
@@ -130,15 +153,15 @@ main {
   .job {
     background-color: lighten($primary-color, 5);
     padding: 1rem;
-    border: $secondary-color 3px solid;
+    border: $secondary-color 2px solid;
     width: 95%;
     height: 95%;
   }
   .overflow {
-    max-height: 18vh;
-    min-height: 5vh;
+    max-height: 30vh;
+    min-height: 6vh;
     overflow-y: auto;
-    padding: 0.7rem 1.3rem;
+    padding: 1.5rem 1.3rem;
   }
 }
 // project page
