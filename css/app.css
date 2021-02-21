@@ -472,13 +472,22 @@ main#home h1 {
   width: 95%;
   height: 95%;
 }
+.about-me .bio-1 {
+  grid-area: bio-1;
+}
+.about-me .bio-2 {
+  grid-area: bio-2;
+}
+.about-me .bio-3 {
+  grid-area: bio-3;
+}
 
 .about-info {
   justify-items: center;
   align-items: center;
   display: grid;
   grid-gap: 50px;
-  grid-template-areas: "skills job1 job2" "job3 job4 job5";
+  grid-template-areas: "skills job1 job2";
   grid-template-columns: repeat(3, 1fr);
 }
 .about-info .skills {
@@ -586,4 +595,139 @@ main#home h1 {
   background: black;
   color: #fff;
   height: 60px;
+}
+
+@media screen and (min-width: 1171px) {
+  .bio-image {
+    width: 300px !important;
+  }
+
+  #project .sm-heading {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  #project .sm-heading {
+    width: 70%;
+  }
+
+  .about-me {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .about-info {
+    grid-template-areas: "skills job1 job2" "job3 job4 job5";
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #about .sm-heading {
+    width: 100%;
+  }
+  #about .photo-1, #about .photo-2, #about .photo-3 {
+    width: 300px !important;
+  }
+  #about .about-me {
+    grid-template-areas: "photo-1 photo-2 photo-3" "bio-1 bio-2 bio-3";
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  h2.sm-heading {
+    width: 100% !important;
+  }
+
+  #contact .boxes div {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  main {
+    align-items: center;
+    text-align: center;
+  }
+  main .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-size: 3.2rem !important;
+  }
+
+  ul.menu-nav,
+div.menu-branding {
+    background: black;
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+  ul.menu-nav.show,
+div.menu-branding.show {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .menu-nav {
+    height: 80vh;
+    transform: translate3d(0, 100%, 0);
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .menu-branding {
+    height: 20vh;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  .about-info {
+    grid-template-areas: "skills" "job1" "job2";
+    grid-template-columns: 1fr;
+  }
+
+  .about-me {
+    grid-template-areas: "photo-1" "bio-1" "photo-2" "bio-2" "photo-3" "bio-3";
+    grid-template-columns: 1fr;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  h2.sm-heading {
+    width: 100% !important;
+  }
+
+  main {
+    padding: 0 2rem;
+  }
+  main h1 {
+    padding-top: 10vh;
+  }
+  main#about #myChart {
+    width: 100%;
+  }
+
+  #contact .boxes div {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .menu-nav {
+    height: 70vh;
+    transform: translate3d(0, 100%, 0);
+    font-size: 16px;
+    text-align: center;
+  }
+  .menu-nav li {
+    margin: 2px 0;
+  }
+
+  .menu-branding {
+    height: 30vh;
+    transform: translate3d(0, -100%, 0);
+  }
+  .menu-branding #aforisma {
+    display: none !important;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }
