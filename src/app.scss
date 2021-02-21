@@ -1,7 +1,6 @@
 @import "common";
 @import "menu";
 @import "animations";
-// @import "mobile";
 
 * {
   padding: 0;
@@ -22,6 +21,7 @@ body {
 h1,
 h2,
 h3 {
+
   font-weight: 400;
   &.lg-heading {
     font-size: 6rem;
@@ -109,6 +109,15 @@ main {
     width: 95%;
     height: 95%;
   }
+  .bio-1{
+    grid-area: bio-1;
+  }
+  .bio-2{
+    grid-area: bio-2;
+  }
+  .bio-3{
+    grid-area: bio-3;
+  }
 }
 
 // griglia skills & exp
@@ -118,8 +127,8 @@ main {
   display: grid;
   grid-gap: 50px;
   grid-template-areas:
-    "skills job1 job2"
-    "job3 job4 job5";
+    "skills job1 job2";
+    // "job3 job4 job5";
   grid-template-columns: repeat(3, 1fr);
 
   .skills {
@@ -240,3 +249,5 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
+
+@import "mobile";
