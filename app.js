@@ -80,7 +80,7 @@ var colors = {
   secondaryColor: "#08d816"
 }; // chart js
 
-var ctx = document.getElementById("myChart").getContext("2d");
+var ctx = document?.getElementById("myChart")?.getContext("2d");
 var chart = new Chart(ctx, {
   // The type of chart we want to create
   type: "horizontalBar",
