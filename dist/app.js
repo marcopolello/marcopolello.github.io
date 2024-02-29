@@ -7,6 +7,8 @@
   \********************/
 /***/ (() => {
 
+var _document, _document$getElementB;
+
 //select DOM Items
 // const afoText = document.querySelector(".aforisma");
 var menuBtn = document.querySelector(".menu-btn");
@@ -80,7 +82,7 @@ var colors = {
   secondaryColor: "#08d816"
 }; // chart js
 
-var ctx = document.getElementById("myChart").getContext("2d");
+var ctx = (_document = document) === null || _document === void 0 ? void 0 : (_document$getElementB = _document.getElementById("myChart")) === null || _document$getElementB === void 0 ? void 0 : _document$getElementB.getContext("2d");
 var chart = new Chart(ctx, {
   // The type of chart we want to create
   type: "horizontalBar",
